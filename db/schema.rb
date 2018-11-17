@@ -29,6 +29,7 @@ ActiveRecord::Schema.define(version: 2018_11_17_015022) do
 
   create_table "images", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.integer "post_id", null: false
+    t.string "image_path", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -49,6 +50,7 @@ ActiveRecord::Schema.define(version: 2018_11_17_015022) do
   end
 
   create_table "shops", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "name", null: false
     t.string "site_url", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
