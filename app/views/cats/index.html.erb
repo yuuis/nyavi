@@ -1,7 +1,7 @@
 <% @cats.each do |cat| %>
   <a href="/cats/<%= cat.id %>">
     <div class="card" style="width: 300px; margin-right: 20px; margin-top: 20px" style="object-fit: cover">
-      <img class="card-img-top" src="<%= "/cats/#{cat.images.image_path}" %>" alt="Card image cap" width="300" height="300" style="object-fit: cover">
+      <img class="card-img-top" src="<%= "/cats/#{cat.images.first}" %>" alt="Card image cap" width="300" height="300" style="object-fit: cover">
     </div>
   </a>
 <% end %>

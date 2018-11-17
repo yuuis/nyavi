@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  resources :cats, only: [:index, :show]
+  get "/" =>  "posts#index"
+  resources :posts, only: [:index, :show]
 end
