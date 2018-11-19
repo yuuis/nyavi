@@ -26,6 +26,7 @@ class InitialSchema < ActiveRecord::Migration[5.2]
     end
 
     create_table :shops do |t|
+      t.string :name, null: false
       t.string :site_url, null: false
       t.timestamps null: false
     end
